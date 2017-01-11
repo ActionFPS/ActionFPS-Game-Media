@@ -1,5 +1,5 @@
 /**
-  Download 'https://github.com/assaultcube/AC/archive/v1.2.0.2.zip',
+  Download 'https://github.com/assaultcube/AC/archive/v1.2.0.2.zip' if checksum has not changed since last time (signifying an update),
   Verify checksum,
   Extract 'AC-1.2.0.2/packages' contents to 'downloads/assaultcube-official/'
   Where 'downloads/*' is all the mods/extensions, similar to 'PATH'
