@@ -1,15 +1,13 @@
-/**
-  Download 'https://github.com/assaultcube/AC/archive/v1.2.0.2.zip' if checksum has not changed since last time (signifying an update),
-  Verify checksum,
-  Extract 'AC-1.2.0.2/packages' contents to 'downloads/assaultcube-official/'
-  Where 'downloads/*' is all the mods/extensions, similar to 'PATH'
-  While ignoring 'maps/official/ac_aqueous.cfg' and 'maps/official/ac_aqueous.cgz'
-**/
+# Download 'https://github.com/assaultcube/AC/archive/v1.2.0.2.zip' if checksum has not changed since last time (signifying an update),
+#  Verify checksum,
+#  Extract 'AC-1.2.0.2/packages' contents to 'downloads/assaultcube-official/'
+#  Where 'downloads/*' is all the mods/extensions, similar to 'PATH'
+#  While ignoring 'maps/official/ac_aqueous.cfg' and 'maps/official/ac_aqueous.cgz'
 assaultcube-official:
-  - zip: https://github.com/assaultcube/AC/archive/v1.2.0.2.zip
-  - shasum: 4b6927266db9e0a2cf00b80afbb3cf6f5949783e
-  - directory: AC-1.2.0.2/packages
-  - ignore:
+  zip: https://github.com/assaultcube/AC/archive/v1.2.0.2.zip
+  shasum: 4b6927266db9e0a2cf00b80afbb3cf6f5949783e
+  directory: AC-1.2.0.2/packages
+  ignore:
     - maps/official/ac_aqueous.cfg
     - maps/official/ac_aqueous.cgz
-    
+    - maps/official/preview/ac_aqueous.jpg
